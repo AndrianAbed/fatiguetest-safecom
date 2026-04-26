@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+}
+
+.clickable-area {
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    background: #08CB00;
+    display:grid;
+    place-items: center;
+    font-size:32px ;
+    font-family: 'Verdana';
+    color: #ffff;
+    font-weight: bold;
+}
+
+.end-screen,
+.main-menu {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    background: #005792;
+    color: #ffff;
+    font-family: "verdana", tahoma;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-menu.active,
+.end-screen.active {
+    display: grid;
+    place-items: center;
+}
+.main-menu.active .logo-opening {
+    font-family: verdana;
+    font-size: 130px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    color: #ffff;
+    text-decoration: none;
+    
+
+}
+
+.main.menu {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 700px;
+    padding:0 20px ;
+}
+
+.main-menu h1 {
+    font-size: 60px;
+    margin: 8px 0;
+}
+
+.container p {
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 700;
+    margin: 0;
+}
+
+.end-screen h1 {
+ font-size: 50px;
+}
+
+.Kategori {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.reaction-time-text {
+    font-size: 130px;
+    font-weight: 900;
+}
+
+.end-screen .coba-lagi-button {
+    border: none;
+    background-color: #6ddaff;
+    color: #ffff;
+    font-size: 20px;
+    padding: 8px 32px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 18px;
+    
+}
+
+.coba-lagi-button:hover {
+    text-decoration: underline;
+    color: #5A9CB5;
+}
+ 
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }  
+} 
